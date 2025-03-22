@@ -6,13 +6,13 @@ caches:
   images:
     dir: :cacheDir/images
 params:
-  defaultTheme: light
+  defaultTheme: auto
   disableThemeToggle: false
   profileMode:
     enabled: true
     title: "Hello there!👋"
-    subtitle: "I'm Artem Grigorev, a Site Reliability Engineer. You can find me on the links below."
-    imageUrl: "https://avatars.githubusercontent.com/u/35077127?s=400&u=333bca4463c8359d2071cc956d59aac9e3ef92b6&v=4" # optional
+    subtitle: "I'm Artem Grigorev, a Site Reliability Engineer and a DevOps Engineer. You can reach out to me using the links below."
+    imageUrl: "https://avatars.githubusercontent.com/u/35077127?s=400&u=333bca4463c8359d2071cc956d59aac9e3ef92b6&v=4"
     imageWidth: 180 # custom size
     imageHeight: 180 # custom size
   buttons: []
@@ -35,8 +35,8 @@ menu:
       url: /
       weight: 10
     - identifier: blog
-      name: Blog
-      url: /blog/
+      name: Posts
+      url: /posts/
       weight: 20
     - identifier: about
       name: About Me
@@ -44,7 +44,7 @@ menu:
       weight: 30
     - identifier: resume
       name: Resume
-      url: /resume/
+      url: /resume/resume.pdf
       weight: 40
   
 

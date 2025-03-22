@@ -1,4 +1,4 @@
-baseURL: https://example.org/
+baseURL: https://artemgrigorev.com
 languageCode: en-us
 title: Artem Grigorev
 theme: ["PaperMod"]
@@ -10,8 +10,8 @@ params:
   disableThemeToggle: false
   profileMode:
     enabled: true
-    title: "Hello there!"
-    subtitle: "I'm Artem Grigorev, a site reliability engineer"
+    title: "Hello there!👋"
+    subtitle: "I'm Artem Grigorev, a Site Reliability Engineer. You can find me on the links below."
     imageUrl: "https://avatars.githubusercontent.com/u/35077127?s=400&u=333bca4463c8359d2071cc956d59aac9e3ef92b6&v=4" # optional
     imageWidth: 180 # custom size
     imageHeight: 180 # custom size

@@ -20,12 +20,12 @@ params:
   socialIcons: # optional
     - name: "linkedin"
       url: "www.linkedin.com/in/artem-grigorev-9aaa65185"
-    - name: "github"
-      url: "https://github.com/grigorevart"
+    # - name: "github"
+    #   url: "https://github.com/grigorevart"
     - name: "telegram"
       url: "https://t.me/artemgr94"
-    - name: "medium"
-      url: "https://medium.com/@artem_gr94"
+    # - name: "medium"
+    #   url: "https://medium.com/@artem_gr94"
     - name: "email"
       url: "mailto:contact@grigorevartem.com"
 menu:

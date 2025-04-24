@@ -27,7 +27,7 @@ params:
     # - name: "medium"
     #   url: "https://medium.com/@artem_gr94"
     - name: "email"
-      url: "mailto:contact@grigorevartem.com"
+      url: "mailto:contact@artemgrigorev.com"
 menu:
   main:
     - identifier: home

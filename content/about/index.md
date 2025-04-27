@@ -21,7 +21,7 @@ I apply software engineering principles to infrastructure and operations to impr
 I'm dedicated to staying up-to-date with industry standards and best practices. My certifications include:
 
 - ✅ 7x Google Cloud Certifications, including Professional Cloud Architect, DevOps Engineer, and Security Engineer  
-- ✅ 3x AWS Certifications, including Solutions Architect and DevOps Engineer  
+- ✅ 3x AWS Certifications, including Solutions Architect and SysOps Engineer
 - 📚 Currently preparing for Microsoft Azure Certification  
 - ⚠️ Previously held (now expired):
   - CKA, CKAD, CKS (Kubernetes)

@@ -34,10 +34,10 @@ menu:
       name: Home
       url: /
       weight: 10
-    - identifier: blog
-      name: Posts
-      url: /posts/
-      weight: 20
+    # - identifier: blog
+    #   name: Posts
+    #   url: /posts/
+    #   weight: 20
     - identifier: about
       name: About Me
       url: /about/
@@ -46,6 +46,3 @@ menu:
       name: Resume
       url: /resume/resume.pdf
       weight: 40
-  
-
-

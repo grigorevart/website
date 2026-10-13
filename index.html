@@ -535,9 +535,9 @@ const COMMANDS = {
     },
   },
   skills: {
-    desc: "S.P.E.C.I.A.L. LOADOUT",
+    desc: "TOOLS AND TECHNOLOGIES",
     run() {
-      say("S.P.E.C.I.A.L. LOADOUT", "head");
+      say("TOOLS AND TECHNOLOGIES", "head");
       say(rule, "dim");
       RESUME.skills.forEach(([k, v]) => say(dots(k, 16) + v));
     },
@@ -604,7 +604,7 @@ const COMMANDS = {
 
   // easter eggs, not listed in HELP
   whoami: { hidden: true, run() { say("GUEST. CLEARANCE: RECRUITER (PROBABLY)."); } },
-  sudo: { hidden: true, run() { say("ACCESS DENIED. NICE TRY, VAULT DWELLER."); } },
+  sudo: { hidden: true, run() { say("ACCESS DENIED. NICE TRY."); } },
   hack: { hidden: true, run() { say("TERMINAL LOCKED. PLEASE CONTACT AN ADMINISTRATOR."); pause(700); say("...JUST KIDDING. TYPE CONTACT.", "dim"); } },
   exit: { hidden: true, run() { say("THERE IS NO EXIT. ONLY THE WASTELAND."); } },
   date: {
@@ -617,7 +617,7 @@ const COMMANDS = {
   },
 };
 const ALIASES = {
-  "?": "help", cls: "clear", special: "skills", certifications: "certs",
+  "?": "help", cls: "clear", certifications: "certs",
   cv: "resume", experience: "resume", exp: "resume", work: "resume",
   white: "theme white", light: "theme white", black: "theme black", dark: "theme black",
 };

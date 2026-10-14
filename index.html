@@ -327,7 +327,6 @@ body {
       <nav class="bar" aria-label="Sections">
         <button type="button" data-cmd="about">[ABOUT]</button>
         <button type="button" data-cmd="skills">[SKILLS]</button>
-        <button type="button" data-cmd="certs">[CERTS]</button>
         <button type="button" data-cmd="resume">[RESUME]</button>
         <button type="button" data-cmd="contact">[CONTACT]</button>
         <button type="button" data-cmd="help">[HELP]</button>
@@ -356,9 +355,11 @@ body {
 const RESUME = {
   name: "ARTEM GRIGOREV",
   role: "SITE RELIABILITY / DEVOPS ENGINEER",
+  location: "BANGKOK, THAILAND",
   about: [
     "DevOps and SRE engineer. I automate and run infrastructure,",
     "from small setups to enterprise systems, in the cloud and on-prem.",
+    "Certified cloud professional.",
     "",
     "Strong background in Linux administration, networking and security.",
     "I apply software engineering to operations: more reliability, more",
@@ -377,14 +378,6 @@ const RESUME = {
     ["OBSERVABILITY", "PROMETHEUS, GRAFANA, ELK, THANOS, LOKI, VICTORIAMETRICS, OPENTELEMETRY"],
     ["SECURITY", "HASHICORP VAULT, TRIVY, SONARQUBE"],
     ["CODE", "PYTHON, GOLANG, BASH"],
-  ],
-  certs: [
-    ["ACTIVE ", "7x GOOGLE CLOUD, INCL. PROFESSIONAL CLOUD ARCHITECT, DEVOPS ENGINEER, SECURITY ENGINEER"],
-    ["ACTIVE ", "3x AWS, INCL. SOLUTIONS ARCHITECT, SYSOPS"],
-    ["PENDING", "MICROSOFT AZURE (IN PREPARATION)"],
-    ["EXPIRED", "CKA, CKAD, CKS"],
-    ["EXPIRED", "HASHICORP VAULT & TERRAFORM ASSOCIATE"],
-    ["EXPIRED", "CISCO CCNA"],
   ],
   resumeUrl: "resume/resume.pdf",
   contact: [
@@ -529,6 +522,7 @@ const COMMANDS = {
       say("PERSONNEL FILE: " + RESUME.name, "head");
       say(rule, "dim");
       say("DESIGNATION : " + RESUME.role);
+      say("LOCATION    : " + RESUME.location);
       say("");
       RESUME.about.forEach(l => say(l));
     },
@@ -539,16 +533,6 @@ const COMMANDS = {
       say("TOOLS AND TECHNOLOGIES", "head");
       say(rule, "dim");
       RESUME.skills.forEach(([k, v]) => say(dots(k, 16) + v));
-    },
-  },
-  certs: {
-    desc: "CERTIFICATIONS",
-    run() {
-      say("CERTIFICATIONS", "head");
-      say(rule, "dim");
-      RESUME.certs.forEach(([state, c]) => say("[" + state + "] " + c, state === "EXPIRED" ? "dim" : ""));
-      say("");
-      say("(HOPEFULLY I'LL RENEW THE EXPIRED ONES ONE DAY)", "dim");
     },
   },
   resume: {
@@ -569,7 +553,7 @@ const COMMANDS = {
   },
   ls: {
     desc: "LIST FILES",
-    run() { say("ABOUT.TXT  SKILLS.DAT  CERTS.DAT  RESUME.PDF  CONTACT.TXT"); },
+    run() { say("ABOUT.TXT  SKILLS.DAT  RESUME.PDF  CONTACT.TXT"); },
   },
   cat: {
     desc: "READ A FILE",
@@ -616,11 +600,11 @@ const COMMANDS = {
   },
 };
 const ALIASES = {
-  "?": "help", cls: "clear", certifications: "certs",
+  "?": "help", cls: "clear",
   cv: "resume", experience: "resume", exp: "resume", work: "resume",
   white: "theme white", light: "theme white", black: "theme black", dark: "theme black",
 };
-const FILES = ["about", "skills", "certs", "resume", "contact"];
+const FILES = ["about", "skills", "resume", "contact"];
 
 function run(raw) {
   if (!raw) return;
